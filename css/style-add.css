@@ -1,0 +1,232 @@
+.alt-bg {
+  display: grid;
+  grid-area: alt-bg;
+  background: #fff;
+  color: #000;
+}
+
+.nav-item-home {
+  color: #c4c4c4;
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 0 0.5em;
+  transition: all ease-in-out 0.5s;
+}
+
+.nav-item-home:hover {
+  color: #373737;
+  transition: all ease-in-out 0.4s;
+}
+
+.l-grid--4x4 {
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 60px 1fr 60px;
+  grid-gap: 0;
+  grid-template-areas:
+    "header header header header"
+    "alt-bg alt-bg alt-bg alt-bg"
+    "footer footer footer footer";
+}
+
+.grid_wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "t t2"
+                       "st t2"
+                       "t1 i"
+                       "t1 t3"
+                       "t1 .";
+  max-width: 768px;
+  margin: auto;
+}
+
+img {
+  width: 100%;
+}
+
+.red {
+  color: red;
+}
+
+.article_title {
+  grid-area: t;
+  text-align: ;
+  font-size: 2em;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0.5em;
+}
+
+.article_title h1 {
+  padding: 0;
+  margin: 0;
+  font-weight: 900;
+}
+
+.article_title h2 {
+  font-size: 0.8em;
+  margin: 0;
+}
+
+/* .article_title h1:nth-child(2) {
+  margin: -60px 0;
+} */
+
+.article_subtitle {
+  grid-area: st;
+  margin: 1em 0;
+  padding: 0 0.5em;
+}
+
+.article_subtitle h2 {
+  font-size: 1em;
+  padding: 0;
+  margin: 0 0 -10px;
+  font-weight: 700;
+}
+
+.article_subtitle h3 {
+  font-size: 0.8em;
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+}
+
+.article_text {
+  columns: 2;
+  column-gap: 0.7em;
+  column-width: 200px;
+  color: #444;
+}
+
+.article_text p {
+  font-weight: 400;
+  font-size: 0.8em;
+}
+
+.article_text p:first-child {
+  margin-top: 0;
+}
+
+.text-1 {
+  grid-area: t1;
+  padding: 0 0.5em;
+}
+
+.article_image {
+  grid-area: i;
+  position: relative;
+  margin: 0;
+  padding: 0 0.5em;
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  text-align: right;
+  color: red;
+  font-style: italic;
+  font-size: 0.5em;
+}
+
+.text-2 {
+  grid-area: t2;
+  padding: 0.5em;
+}
+
+.upper {
+  margin-top: 1em;
+}
+
+.text-3 {
+  grid-area: t3;
+  padding: 0.5em;
+}
+
+.fixed {
+  position: fixed;
+  bottom: 0;
+}
+
+.footer-content {
+  height: 60px;
+  width: 100vw;
+  text-align: center;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+  .l-grid--4x4 {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: auto 1fr 60px;
+    grid-template-rows: auto 1fr 60px;
+    grid-template-areas:
+      "header header header"
+      "alt-bg alt-bg alt-bg"
+      "footer footer footer";
+  }
+}
+
+/* Work Styles */
+
+.grid-portfolio {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "one two" "one four" "three four";
+  /*min-height: 100vh;*/
+}
+
+.portfolio-item-one {
+  grid-area: one;
+  /*border: 1px solid #c4c4c4;*/
+}
+
+.portfolio-item-two {
+  grid-area: two;
+  /*border: 1px solid #c4c4c4;*/
+}
+
+.portfolio-item-three {
+  grid-area: three;
+  /*border: 1px solid #c4c4c4;*/
+}
+
+.portfolio-item-four {
+  grid-area: four;
+  /*border: 1px solid #c4c4c4;*/
+}
+
+/* Tooltips */
+
+/* .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    /* position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+} */
