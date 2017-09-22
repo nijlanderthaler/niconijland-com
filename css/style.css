@@ -7,6 +7,7 @@
 /* === General Styles === */
 
 body {
+  background: #1c1e22;
   background: #000;
   color: #fff;
   font-size: 16px;
@@ -138,12 +139,12 @@ footer {
 
 .footer-content {
   flex: 1 1 0;
-  padding-top: 1em;
   background: #4f4f4f;
 }
 
 .footer-content ul {
-  margin: 0;
+  margin: 1em 0 0;
+  padding: 0;
 }
 
 .heading {
@@ -209,7 +210,7 @@ nav li {
   color: #c4c4c4;
   text-decoration: none;
   font-size: 2rem;
-  margin-right: 1.5rem;
+  margin: 0 0.75rem;
   transition: all ease-in-out 0.5s;
 }
 
@@ -256,8 +257,8 @@ footer li {
   color: #fff;
 }
 
-.img-background--panzer {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/panzeriv.jpg);
+.img-background--wester {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/westerpark.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
@@ -265,6 +266,35 @@ footer li {
 
 .img-background--fecamp {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/fwwu-fecamp2.jpeg);
+}
+
+/* Tooltips */
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    /* border-bottom: 1px solid #c4c4c4; */
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 240px;
+    background-color: #eee;
+    color: #373737;
+    text-align: center;
+    border-radius: 6px;
+    padding: 0.5em;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }
 
 /* === Media Queries === */
@@ -437,13 +467,14 @@ footer li {
   }
 }
 
-@media screen and (max-width: 400px) and (orientation: portrait) {
-  .logo {
+@media screen and (max-width: 414px) and (orientation: portrait) {
+  .logo,
+  .nav-item {
     font-size: 0.8rem;
   }
 
-  .nav-item {
-    font-size: 0.8rem;
+  nav ul {
+    margin-top: -4px;
   }
 
   .burger-container {
@@ -453,6 +484,7 @@ footer li {
 
   .burger-nav {
     top: 9px;
+    margin-top: 2px;
   }
 
   .burger-nav span {
@@ -469,7 +501,7 @@ footer li {
   }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 375px) {
   .l-grid--4x4 {
     -ms-grid-columns: (1fr)[1];
     grid-template-columns: repeat(1, 1fr);
@@ -502,12 +534,13 @@ footer li {
 /* Tablets Landscape */
 
 @media screen and (max-width: 768px) and (orientation: landscape) {
-  .logo {
+  .logo,
+  .nav-item {
     font-size: 0.8rem;
   }
 
-  .nav-item {
-    font-size: 0.8rem;
+  nav ul {
+    margin-top: -4px;
   }
 
   .burger-container {
@@ -517,6 +550,7 @@ footer li {
 
   .burger-nav {
     top: 9px;
+    margin-top: 2px;
   }
 
   .burger-nav span {
@@ -532,5 +566,3 @@ footer li {
     top: -11px;
   }
 }
-
-/* About Styles */
