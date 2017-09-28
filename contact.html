@@ -15,9 +15,9 @@
       This demo requires CSS Grid. The current browser you're using doesn't support it and is using a Flexbox fallback. Find a <a href="https://igalia.github.io/css-grid-layout/enable.html">grid-enabled browser</a>.
     </div>
 
-    <div class="l-grid l-grid--4x4 l-full-height">
-       <header class="theme-grey l-grid__item l-grid">
-          <nav>
+    <div class="grid grid-4x4 full-height">
+       <header class="theme-grey grid grid-item fixed-top">
+          <nav class="nav-fixed">
             <ul>
               <li><a href="index.html" class="logo">NICO<span class="bold">NIJLAND</span>.COM <span class="hyphen">-</span> Front<span class="bold">End</span>Developer</a></li>
               <li class="burger-container">
@@ -28,7 +28,7 @@
                 </a>
               </li>
             </ul>
-            <ul class="menu-content">
+            <ul class="menu-content menu-contact">
               <li><a href="index.html" class="nav-item-home">Home</a></li>
               <li><a href="about.html" class="nav-item">About</a></li>
               <li><a href="work.html" class="nav-item">Work</a></li>
@@ -37,9 +37,9 @@
           </nav>
         </header>
         <div class="alt-bg">
-          <div class="grid_contact">
+          <div class="grid-contact">
             <div class="contact-social-wrapper">
-              <div class="social_block">
+              <div class="social-block">
                 <ul>
                   <li><a href="#" class="nav-social-contact"><i class="fa fa-facebook-square" aria-hidden="true"></i> <p class="social-text">Like me on Facebook</p></a></li>
                   <li><a href="#" class="nav-social-contact"><i class="fa fa-linkedin-square" aria-hidden="true"></i> <p class="social-text">Connect on LinkedIn</p></a></li>
@@ -48,21 +48,21 @@
               </div>
             </div>
             <div class="contact-form-wrapper">
-              <div class="contact_block">
-                <h2 class="form-title">DROP A MESSAGE</h2>
+              <div class="contact-block">
+                <h2 class="form-title">SEND A MESSAGE</h2>
                 <form id="form" class="topBefore">
 
           		  <input id="name" type="text" placeholder="NAME">
           		  <input id="email" type="text" placeholder="E-MAIL">
           		  <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
-                <input id="submit" type="submit" value="GO!">
+                <input id="submit" type="submit" value="SEND!">
 
                 </form>
               </div>
             </div>
           </div>
         </div>
-        <footer class="theme-grey l-grid__item l-grid">
+        <footer class="theme-grey grid grid-item fixed-bottom">
           <div class="footer-content">
             <ul>
               <li><a href="#" class="nav-social"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>

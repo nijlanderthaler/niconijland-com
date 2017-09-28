@@ -15,9 +15,9 @@
       This demo requires CSS Grid. The current browser you're using doesn't support it and is using a Flexbox fallback. Find a <a href="https://igalia.github.io/css-grid-layout/enable.html">grid-enabled browser</a>.
     </div>
 
-    <div class="l-grid l-grid--4x4 l-full-height">
-       <header class="theme-grey l-grid__item l-grid">
-          <nav>
+    <div class="grid grid-4x4 full-height">
+       <header class="theme-grey grid grid-item fixed-top">
+          <nav class="nav-fixed">
             <ul>
               <li><a href="index.html" class="logo">NICO<span class="bold">NIJLAND</span>.COM <span class="hyphen">-</span> Front<span class="bold">End</span>Developer</a></li>
               <li class="burger-container">
@@ -28,7 +28,7 @@
                 </a>
               </li>
             </ul>
-            <ul class="menu-content">
+            <ul class="menu-content menu-about">
               <li><a href="index.html" class="nav-item-home">Home</a></li>
               <li><a href="about.html" class="nav-item active">About</a></li>
               <li><a href="work.html" class="nav-item">Work</a></li>
@@ -37,41 +37,39 @@
           </nav>
         </header>
         <div class="alt-bg">
-          <article class="grid_wrapper">
-            <div class="article_title">
-              <h1 class="article_title-top">Tank</h1>
-              <h1 class="article_title-top-2">Talk</h1>
-              <h2 class="article_title-bottom">With Nico Nijland</h2>
+          <div class="grid-article full-height">
+          <article class="grid-wrapper">
+            <div class="article-title">
+              <h1 class="article-title-top">Tank</h1>
+              <h1 class="article-title-top-2">Talk <span class="title-text">with Nico Nijland</span></h1>
+              <!--<h2 class="article-title-bottom">With Nico Nijland</h2>-->
             </div>
-            <div class="article_subtitle">
-              <h2>The Front End of a... Tank?</h2>
-              <h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates quod dolores accusamus nulla doloremque minus minima? Doloribus quod, ea consequuntur?</p>
-              </h3>
+            <div class="article-subtitle">
+              <h2>The front end of a... tank?</h2>
+              <h3>Ik hoor u al denken: waarom heeft een front end developer een ‘about me’ sectie met een dergelijke titel? Onder andere om u te prikkelen verder te lezen!</h3>
             </div>
-            <div class="article_text text-1">
-              <p>Why does a front end 'about' section have a title like that? Well, I haven't always been
-              a front end developer. History was my first true love, specifically World War II. Here I am posing with
-              a German Panther (Panzerkampfwagen V) tank. A great piece of engineering, inspired by the superior Russian T34 tank that surprised
-              the German invasion forces in 1941.
-              </p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo odio eligendi voluptatum tempore fugit dolore nulla adipisci enim, veritatis laborum officia dignissimos sapiente iste consequatur sit animi doloribus porro autem officiis voluptate.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo odio eligendi voluptatum tempore fugit dolore nulla adipisci enim, veritatis laborum officia dignissimos sapiente iste consequatur sit animi doloribus porro autem officiis voluptate error laudantium delectus, ipsam placeat quaerat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo odio eligendi voluptatum tempore fugit dolore nulla adipisci enim, veritatis laborum officia dignissimos sapiente iste consequatur sit animi doloribus porro autem officiis voluptate error laudantium delectus, ipsam placeat quaerat.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo odio eligendi voluptatum tempore fugit dolore nulla adipisci enim, veritatis laborum officia dignissimos sapiente iste consequatur sit animi doloribus porro autem officiis voluptate error laudantium delectus, ipsam placeat quaerat.</p>
+            <div class="article-text text-1">
+              <p>Ik ga hier uiteraard niet een heel artikel vol keuvelen over tanks, hoewel ik dat uitstekend zou kunnen. Het zit namelijk zo: ik ben niet altijd front end developer geweest. Mijn eerste fascinatie is altijd geschiedenis geweest, en dan met name de Tweede Wereldoorlog. Het mag dan ook niet verbazen dat ik Geschiedenis ben gaan studeren (UvA) en mezelf historicus mag noemen.</p>
+              <p>Ik sta hier op de foto met mijn favoriete tank, de Panther. Dit metalen gevaarte van Duitse makelij joeg in de laatste jaren van Tweede Wereldoorlog de geallieerden de stuipen op het lijf en was berucht vanwege zijn snelheid en vuurkracht. Dit specifieke exemplaar werd tijdens de slag om Overloon (herfst 1944) uitgeschakeld en staat daar in het oorlogsmuseum. Afijn, genoeg Tank Talk! Alhoewel, ik heb niet willekeurig gekozen voor dit onderwerp. Mijn vroegere hobby was modelbouw en ik heb heel wat tanks en dergelijke in elkaar geplakt om ze daarna te verfraaien. Verdomd secuur werk. Modelbouwer en historicus? Begint het u al te dagen?</p>
             </div>
-            <div class="article_image"><img src="img/overloon-2.jpg"/>
-              <p class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit obcaecati</p>
+            <div class="article-text text-2">
+              <p>Ik houd dus van priegelwerk, van het mooi maken van dingen, en van werken met enorme lappen tekst waarbij een enorme hoeveelheid informatie moet worden geordend en gestructureerd. Klinkt verdacht veel als het werk van een front end developer, nietwaar?</p>
+              <p>Dat dacht ik een tijdje terug ook. Mijn interesse in techniek in het algemeen en computers in het bijzonder is dan ook van redelijk recente datum. Ik vermoed dat mijn overstap van een pre-historische Acer naar een MacBook Pro een flinke duit in het zakje heeft gedaan. Ik zag mezelf als geschiedenisliefhebber met een talenknobbel nooit echt als een bèta. De keuze voor front end  lag eveneens voor de hand: ik realiseerde me dat ik voortdurend op websites vertoefde en onbewust een scherpe mening had over de kwaliteit (inhoud en opmaak) en gebruiksvriendelijkheid van websites. De combinatie tussen esthetiek en techniek spreekt me vooral enorm aan.</p>
             </div>
-            <div class="article_text text-2 upper">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea cumque nesciunt veritatis aut alias molestiae ullam, deserunt hic, cum atque fuga voluptatum et ex repellat magni. Minima blanditiis tempora quo atque necessitatibus esse minus, aut quam nisi eveniet, autem eum!</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam cum repudiandae accusamus quos quam consequatur tempora distinctio facere sequi aut enim, provident accusantium, incidunt corrupti velit expedita alias quasi obcaecati praesentium explicabo nesciunt qui non fugiat molestias. Sint fuga quidem magni porro! Recusandae esse, suscipit quo aliquid aliquam officiis minus, ea ratione quod non, repellendus et nihil ullam quibusdam labore!</p>
+            <div class="article-image"><img src="img/overloon-2.jpg" alt="portrait with tank"/>
+              <p class="caption">Panzerkampfwagen V, Panther, Oorlogsmuseum Overloon</p>
             </div>
-            <div class="article_text text-3">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, dolorum? Repellat consequatur error consequuntur. Omnis nam magnam odio natus, ipsa quia ad. Corrupti nostrum rerum facere minima perspiciatis atque impedit, cum esse! Ipsam alias, ratione aliquam totam quidem reprehenderit debitis modi illum suscipit tempore aperiam eos blanditiis quam distinctio, possimus itaque, libero ipsa? Reprehenderit qui architecto porro? Adipisci suscipit ab impedit est repudiandae, deserunt iusto, iste dolorum, reiciendis magnam provident sint, nesciunt perferendis minus consectetur. Quaerat quidem autem corporis cupiditate, alias ipsum quasi tenetur, suscipit enim adipisci molestiae commodi placeat reprehenderit dolore maiores quos dolorum, hic! Magnam reprehenderit, enim repellat.</p>
+            <div class="article-text text-3 upper">
+              <p>De overstap van tekst naar code voelt volkomen logisch aan. Hoe meer talen, hoe beter! Ik vind front end development geweldig en kan niet wachten om ergens aan de slag te gaan, zodat ik de kneepjes van het vak echt onder de knie kan krijgen.</p>
+            </div>
+            <div class="article-text text-4">
+              <p>Het moet even gezegd worden: deze site is gemaakt met CSS Grid en deze techniek heerst. Deze magazine style lay-out is daar een mooi voorbeeld van. Technieken waar ik momenteel mee werk: HTML5, CSS3 (incl. CSS Animations, CSS Flexbox en CSS Grid), Git/GitHub, JavaScript, JQuery, SASS, Responsive Web Design en Bootstrap 3 & 4.</p>
+              <p>In de ‘work’ sectie bevindt zich trouwens een link naar de site van mijn eigen band Fire Walk With Us. Mijn eerste web project. Check it out.</p>
             </div>
           </article>
+          </div>
         </div>
-          <footer class="theme-grey l-grid__item l-grid fixed">
+          <footer class="theme-grey grid grid-item fixed-bottom">
             <div class="footer-content">
               <ul>
                 <li><a href="#" class="nav-social"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
