@@ -41,7 +41,7 @@
   background: #fff;
 }
 
-.grid-wrapper {
+.article-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
@@ -75,12 +75,6 @@ img {
   font-weight: 900;
   /*border: 1px solid red;*/
 }
-
-/*.article-title h2 {
-  font-size: 0.7em;
-  margin: 0.5em 0 0 36px;
-  border: 1px solid green;
-} oude ondertitel */
 
 .article-title h1:nth-child(1) {
   margin-left: 33px;
@@ -136,7 +130,7 @@ img {
 .text-2 {
   grid-area: t2;
   padding: 0 1em;
-  /*border: 1px solid grey;*/
+  /*border: 1px solid blue;*/
 }
 
 .article-image {
@@ -262,8 +256,7 @@ img {
 }
 
 .social-block {
-  width: 80%;
-  /*border: 1px solid blue;*/
+  width: 60%;
 }
 
 .nav-social-contact {
@@ -279,12 +272,10 @@ img {
 .social-block ul {
   list-style-type: none;
   padding: 0;
-  /*border: 1px solid yellow;*/
 }
 
 .social-block li {
   margin: 10px 0;
-  /*border: 1px solid pink;*/
 }
 
 .social-block ul li .fa {
@@ -302,13 +293,15 @@ img {
 }
 
 .contact-form-wrapper {
-  width: 80%;
-  margin: auto;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact-block {
-  width: 100%;
-  margin-top: -50px;
+  width: 80%;
+  margin-top: -25px;
 }
 
 .menu-contact {
@@ -510,33 +503,51 @@ textarea:hover {
   }
 }
 
-@media only screen and (max-device-width: 1024px), screen and (max-width: 1024px) and (orientation: portrait) {
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
   .grid-contact {
     grid-template-columns: 1fr;
-    grid-template-rows: 40% 1fr;
+    grid-template-rows: 35% 1fr;
   }
 
   .portfolio-wrapper {
     width: 80%;
   }
+
+  .social-block {
+    width: 30%;
+  }
 }
 
-@media only screen and (max-device-width: 768px), screen and (max-width: 768px) and (orientation: portrait) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
   .grid-contact {
     margin-top: 50px;
   }
 
-  .portfolio-wrapper {
+  /*.portfolio-wrapper {
+    margin-top: 60px;
+  }*/
+
+  .article-wrapper {
     margin-top: 60px;
   }
 
-  .grid-wrapper {
-    margin-top: 60px;
+  .social-block {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 694px) and (orientation: portrait) {
+  .caption {
+    bottom: 7em;
+  }
+
+  .text-4 {
+    margin-top: -4em;
   }
 }
 
 @media screen and (max-width: 650px) and (orientation: portrait) {
-  .grid-wrapper {
+  .article-wrapper {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas:
@@ -551,16 +562,23 @@ textarea:hover {
 
   .caption {
     color: #fff;
+    bottom: 0;
   }
 
   .text-2 {
     padding: 0.5em 1em 0;
-    /*border: 1px solid grey;*/
+  }
+
+  .text-4 {
+    margin-top: 0;
+  }
+
+  .article-image {
+    padding-top: 0.5em;
   }
 
   .portfolio-wrapper {
-    width: 90%;
-    margin: 5% auto;
+    width: 94%;
   }
 
   .container-img {
@@ -571,9 +589,25 @@ textarea:hover {
   .nav-fixed {
     margin-bottom: 1.5em;
   }
+
+  .social-block {
+    width: 60%;
+  }
 }
 
-@media screen and (max-width: 414px) and (orientation: portrait) {
+@media screen and (max-width: 438px) and (orientation: portrait) {
+  .grid-portfolio {
+    background: #1c1e22;
+  }
+
+  .sl-control {
+    color: #c4c4c4;
+  }
+
+  .portfolio-block {
+    color: #c4c4c4;
+  }
+
   .grid-contact {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr;
@@ -598,16 +632,20 @@ textarea:hover {
     position: relative;
   }
 
+  .social-block {
+    width: 50%;
+  }
+
   .social-block ul li .fa {
-    font-size: 2em;
+    font-size: 1.9em;
   }
 
   .social-block ul li p {
-    font-size: 1em;
+    font-size: 0.9em;
   }
 
-  .contact-block {
-    margin-top: -25px;
+  .form-title {
+    margin-bottom: 20px;
   }
 
   input {
@@ -616,6 +654,10 @@ textarea:hover {
 
   textarea {
     height: 85px;
+  }
+
+  .article-image {
+    padding-top: 0;
   }
 }
 
@@ -629,6 +671,10 @@ textarea:hover {
   .container-img {
     width: 300px;
     height: 160px;
+  }
+
+  .social-block {
+    width: 60%;
   }
 }
 
@@ -645,6 +691,10 @@ textarea:hover {
 
   .social-block ul li p {
     font-size: 0.7em;
+  }
+
+  .social-block {
+    width: 50%;
   }
 
   .form-title {
@@ -666,15 +716,33 @@ textarea:hover {
   .nav-social-contact {
     font-size: 1.1em;
   }
+
+  .social-block {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 960px) and (orientation: landscape) {
+  .social-block {
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 768px) and (orientation: landscape) {
+  .alt-bg {
+    min-height: 100vh;
+  }
+
   .grid-contact {
     margin-top: 50px;
   }
 
-  .grid-wrapper {
+  .article-wrapper {
     margin-top: 60px;
+  }
+
+  .article-title {
+    font-size: 1.5em;
   }
 
   .nav-fixed {
@@ -683,5 +751,157 @@ textarea:hover {
 
   .nav-item-home {
     font-size: 0.8rem;
+  }
+
+  .portfolio-wrapper {
+    margin: 2% auto;
+    font-size: 0.8em;
+  }
+
+  .container-img {
+    width: 500px;
+    height: 266px;
+  }
+
+  .contact-block {
+    margin-top: 10px;
+  }
+
+  .social-block {
+    width: 70%;
+  }
+
+  .social-block ul li .fa {
+    font-size: 1.7em;
+  }
+
+  .social-block ul li p {
+    font-size: 0.8em;
+  }
+
+  input {
+    height: 40px;
+  }
+
+  textarea {
+    height: 85px;
+  }
+
+  .form-title {
+    font-size: 1.3em;
+  }
+}
+
+@media screen and (max-width: 736px) and (orientation: landscape) {
+  .caption {
+    bottom: 2em;
+  }
+
+  .text-4 {
+    margin-top: -1em;
+  }
+}
+
+@media screen and (max-width: 667px) and (orientation: landscape) {
+  .caption {
+    bottom: 8em;
+  }
+
+  .text-4 {
+    margin-top: -4.5em;
+  }
+
+  .container-img {
+    width: 450px;
+    height: 240px;
+  }
+
+  .portfolio-wrapper {
+    font-size: 0.7em;
+  }
+}
+
+@media screen and (max-width: 568px) and (orientation: landscape) {
+  .caption {
+    bottom: 22em;
+    font-size: 0.5em;
+  }
+
+  .text-4 {
+    margin-top: -10.5em;
+  }
+
+  .container-img {
+    width: 400px;
+    height: 213px;
+  }
+
+  .social-block ul li .fa {
+    font-size: 1.4em;
+  }
+
+  .social-block ul li p {
+    font-size: 0.7em;
+  }
+
+  input {
+    height: 30px;
+    font-size: 0.7em;
+  }
+
+  textarea {
+    height: 65px;
+    font-size: 0.7em;
+  }
+
+  #submit {
+    font-size: 0.7em;
+  }
+
+  .form-title {
+    font-size: 1.1em;
+  }
+}
+
+/* override soft keyboard going to landscape mode in portrait */
+
+@media screen and (max-device-aspect-ratio: 1/1), (max-aspect-ratio: 1/1) {
+  .grid-contact {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+  }
+
+  .social-block {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1024px) and (orientation: portrait) {
+  .social-block {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .social-block {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 438px) and (orientation: portrait) {
+  .social-block {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 375px) and (orientation: portrait) {
+  .social-block {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 320px) and (orientation: portrait) {
+  .social-block {
+    width: 50%;
   }
 }

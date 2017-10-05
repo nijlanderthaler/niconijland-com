@@ -101,6 +101,10 @@ body {
 
 /* Grid Item Styles */
 
+.items {
+  position: relative;
+}
+
 header {
   display: flex;
   flex-wrap: wrap;
@@ -130,18 +134,22 @@ header {
 
 .content {
   padding: 1rem;
+  line-height: 1.1em;
+}
+
+.items:hover .overlay {
+  height: 100%;
 }
 
 .heading {
   font-family: 'Raleway', sans-serif;
   font-size: 0.8rem;
   font-weight: 400;
-  color: #c4c4c4;
 }
 
 .theme-black {
   background: #1c1e22;
-  color: #fff;
+  color: #c3c3c3;
 }
 
 .theme-grey {
@@ -269,6 +277,37 @@ footer li {
 
 .img-background-fecamp {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/fwwu-fecamp2.jpeg);
+}
+
+/* Overlay Images */
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #808080;
+  opacity: 0.4;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+}
+
+.img-text {
+  white-space: nowrap;
+  color: #fff;
+  font-size: 1.2rem;
+  position: absolute;
+  overflow: hidden;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.placeholder {
+  font-size: 1rem;
 }
 
 /* Tooltips */
@@ -441,7 +480,7 @@ footer li {
 
 /* Mobile Portrait */
 
-@media screen and (max-width: 500px) and (orientation: portrait) {
+@media screen and (max-width: 551px) and (orientation: portrait) {
   .grid-4x4 {
     -ms-grid-columns: (1fr)[1];
     grid-template-columns: repeat(1, 1fr);
@@ -538,6 +577,10 @@ footer li {
 
   .hyphen {
     display: ;
+  }
+
+  .img-text {
+    top: 83%;
   }
 }
 
