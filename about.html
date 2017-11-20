@@ -10,16 +10,17 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style-add.css">
   </head>
-  <body>
+  <body class="flex-bg">
     <div class="support-warning">
-      This demo requires CSS Grid. The current browser you're using doesn't support it and is using a Flexbox fallback. Find a <a href="https://igalia.github.io/css-grid-layout/enable.html">grid-enabled browser</a>.
+      This website requires CSS Grid. The current browser you're using doesn't support it and is using a Flexbox fallback. Even so, it should work fine. Grid was used to impress potential employers ;) Please, find a <a href="https://igalia.github.io/css-grid-layout/enable.html">grid-enabled browser</a> for an optimal experience. To continue:
+      <button class="support-btn">hide<a></a></button>
     </div>
 
     <div class="grid grid-4x4 full-height">
-       <header class="theme-grey grid grid-item fixed-top">
+       <header class="theme-grey grid grid-header header-about fixed-top">
           <nav class="nav-fixed">
             <ul>
-              <li><a href="index.html" class="logo">NICO<span class="bold">NIJLAND</span>.COM <span class="hyphen">-</span> Front<span class="bold">End</span>Developer</a></li>
+              <li><a href="index.html" class="logo">NICO<span class="bold">NIJLAND</span>.COM - Front<span class="bold">End</span>Developer</a></li>
               <li class="burger-container">
                 <a class="burger-nav">
                   <span>&nbsp</span>
@@ -36,9 +37,9 @@
             </ul>
           </nav>
         </header>
-        <div class="alt-bg">
+        <div class="alt-bg about-flex">
           <div class="grid-article full-height">
-          <article class="article-wrapper">
+          <article class="article-wrapper article-flex">
             <div class="article-title">
               <h1 class="article-title-top">Tank</h1>
               <h1 class="article-title-top-2">Talk <span class="title-text">with Nico Nijland</span></h1>
@@ -68,16 +69,16 @@
           </article>
           </div>
         </div>
-          <footer class="theme-grey grid grid-item fixed-bottom">
-            <div class="footer-content">
-              <ul>
-                <li><a href="https://www.facebook.com/NicoNijland" class="nav-social"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-                <li><a href="https://nl.linkedin.com/in/nico-nijland" class="nav-social"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-                <li><a href="https://github.com/nijlanderthaler" class="nav-social"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
-              </ul>
-            </div>
-         </footer>
-       </div>
+        <footer class="theme-grey grid grid-footer fixed-bottom">
+          <div class="footer-content">
+            <ul>
+              <li><a href="https://www.facebook.com/NicoNijland" class="nav-social"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+              <li><a href="https://nl.linkedin.com/in/nico-nijland" class="nav-social"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+              <li><a href="https://github.com/nijlanderthaler" class="nav-social"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src="scripts/main.js"></script>
 </body>

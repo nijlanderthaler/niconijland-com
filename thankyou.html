@@ -9,7 +9,6 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style-add.css">
-    <link rel="stylesheet" href="dist/slippry.css">
   </head>
   <body class="flex-bg">
     <div class="support-warning">
@@ -18,8 +17,8 @@
     </div>
 
     <div class="grid grid-4x4 full-height">
-       <header class="theme-grey grid grid-header header-work">
-          <nav>
+       <header class="theme-grey grid grid-header fixed-top">
+          <nav class="nav-fixed">
             <ul>
               <li><a href="index.html" class="logo">NICO<span class="bold">NIJLAND</span>.COM - Front<span class="bold">End</span>Developer</a></li>
               <li class="burger-container">
@@ -30,31 +29,20 @@
                 </a>
               </li>
             </ul>
-            <ul class="menu-content">
+            <ul class="menu-content menu-contact">
               <li><a href="index.html" class="nav-item-home">Home</a></li>
               <li><a href="about.html" class="nav-item">About</a></li>
-              <li><a href="work.html" class="nav-item active">Work</a></li>
-              <li><a href="contact.html" class="nav-item">Contact</a></li>
+              <li><a href="work.html" class="nav-item">Work</a></li>
+              <li><a href="contact.html" class="nav-item active">Contact</a></li>
             </ul>
           </nav>
         </header>
-        <div class="alt-bg work-flex">
-          <div class="grid-portfolio">
-            <section class="portfolio-wrapper">
-        			<article class="portfolio-block">
-        				<a href="#glob" class="sl-control prev">Prev</a> / <a href="#glob" class="sl-control next">Next</a>
-        		    || <a href="#glob" class="sl-control stop">Stop</a> | <a href="#glob" class="sl-control start">Start</a>
-                  <ul id="demo1">
-            				<li class="container-img">
-                      <a href="http://www.firewalkwithus.com">
-                        <img src="img/fwwu-com.jpg" alt="firewalkwithus.com <a href='http://www.firewalkwithus.com'>»</a>">
-                      </a>
-                    </li>
-            				<li class="container-img"><a href="#slide2"><img src="img/fwwu-fecamp2.jpeg" alt="Fecamp, Normandy, France"></a></li>
-            				<li class="container-img"><a href="#slide3"><img src="img/masada.jpg" alt="Masada, The Dead Sea, Israel"></a></li>
-            	    </ul>
-        			</article>
-        		</section>
+        <div class="alt-bg thankyou-flex">
+          <div class="grid-thanks">
+            <div class="thanks">
+              <h1>Thank you!</h1>
+              <p>I'll get back to you as soon as possible.</p>
+            </div>
           </div>
         </div>
         <footer class="theme-grey grid grid-footer">
@@ -66,9 +54,8 @@
             </ul>
           </div>
        </footer>
-     </div>
+    </div>
  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
- <script src="dist/slippry.min.js"></script>
  <script src="scripts/main.js"></script>
 </body>
 </html>

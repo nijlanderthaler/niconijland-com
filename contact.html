@@ -10,16 +10,17 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style-add.css">
   </head>
-  <body>
+  <body class="flex-bg">
     <div class="support-warning">
-      This demo requires CSS Grid. The current browser you're using doesn't support it and is using a Flexbox fallback. Find a <a href="https://igalia.github.io/css-grid-layout/enable.html">grid-enabled browser</a>.
+      This website requires CSS Grid. The current browser you're using doesn't support it and is using a Flexbox fallback. Even so, it should work fine. Grid was used to impress potential employers ;) Please, find a <a href="https://igalia.github.io/css-grid-layout/enable.html">grid-enabled browser</a> for an optimal experience. To continue:
+      <button class="support-btn">hide<a></a></button>
     </div>
 
     <div class="grid grid-4x4 full-height">
-       <header class="theme-grey grid grid-item fixed-top">
+       <header class="theme-grey grid grid-header header-contact fixed-top">
           <nav class="nav-fixed">
             <ul>
-              <li><a href="index.html" class="logo">NICO<span class="bold">NIJLAND</span>.COM <span class="hyphen">-</span> Front<span class="bold">End</span>Developer</a></li>
+              <li><a href="index.html" class="logo">NICO<span class="bold">NIJLAND</span>.COM - Front<span class="bold">End</span>Developer</a></li>
               <li class="burger-container">
                 <a class="burger-nav">
                   <span>&nbsp</span>
@@ -36,7 +37,7 @@
             </ul>
           </nav>
         </header>
-        <div class="alt-bg">
+        <div class="alt-bg contact-flex">
           <div class="grid-contact">
             <div class="contact-social-wrapper">
               <div class="social-block">
@@ -50,19 +51,21 @@
             <div class="contact-form-wrapper">
               <div class="contact-block">
                 <h2 class="form-title">SEND A MESSAGE</h2>
-                <form id="form" class="topBefore">
 
-          		  <input id="name" type="text" placeholder="NAME">
-          		  <input id="email" type="text" placeholder="E-MAIL">
-          		  <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
-                <input id="submit" type="submit" value="SEND!">
+                <form method="post" action="process.php" id="form" class="topBefore">
+
+          		  <input name="name" id="name" type="text" placeholder="NAME">
+          		  <input name="email" id="email" type="text" placeholder="E-MAIL">
+          		  <textarea name="comments" id="message" type="text" rows="10" placeholder="MESSAGE"></textarea>
+                <input name="spam" type="text" size="4" id="spam" placeholder="WHAT IS 2 + 2?"> <!--spambot honeypot-->
+                <input name="submit" id="submit" type="submit" value="SEND!">
 
                 </form>
               </div>
             </div>
           </div>
         </div>
-        <footer class="theme-grey grid grid-item">
+        <footer class="theme-grey grid grid-footer">
           <div class="footer-content">
             <ul>
               <li><a href="https://www.facebook.com/NicoNijland" class="nav-social"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>

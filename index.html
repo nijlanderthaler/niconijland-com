@@ -2,24 +2,32 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <meta property="og:title" content="Nico Nijland's portfolio site">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="http://www.niconijland.com/img/nncom-fullscreen.jpg" />
+    <meta property="og:description" content="Amsterdam-based webdeveloper">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>niconijland.com</title>
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Raleway" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <script>
+      document.addEventListener("touchstart", function(){}, true);
+    </script>
 
   </head>
   <body>
     <div class="support-warning">
-      This demo requires CSS Grid. The current browser you're using doesn't support it and is using a Flexbox fallback. Find a <a href="https://igalia.github.io/css-grid-layout/enable.html">grid-enabled browser</a>.
+      This website requires CSS Grid. The current browser you're using doesn't support it and is using a Flexbox fallback. Even so, it should work fine. Grid was used to impress potential employers ;) Please, find a <a href="https://igalia.github.io/css-grid-layout/enable.html">grid-enabled browser</a> for an optimal experience. To continue:
+      <button class="support-btn">hide<a></a></button>
     </div>
 
     <div class="grid grid-4x4 full-height">
-       <header class="theme-grey grid grid-item">
+       <header class="theme-grey grid grid-header header-index fixed-top">
           <nav>
             <ul>
-              <li><a href="index.html" class="logo">NICO<span class="bold">NIJLAND</span>.COM <span class="hyphen">-</span> Front<span class="bold">End</span>Developer</a></li>
+              <li><a href="index.html" class="logo">NICO<span class="bold">NIJLAND</span>.COM - Front<span class="bold">End</span>Developer</a></li>
               <li class="burger-container">
                 <a class="burger-nav">
                   <span>&nbsp</span>
@@ -36,18 +44,14 @@
           </nav>
         </header>
         <div class="items item-one img-background img-background-fwwu align-center grid grid-item">
+          <p>»</p>
           <a href="http://www.firewalkwithus.com"><div class="overlay">
-            <h2 class="heading img-text">firewalkwithus.com</h2>
+            <h2 class="heading img-text fwwu-link">firewalkwithus.com »</h2>
           </div></a>
         </div>
 
         <div class="items item-two img-background img-background-wester align-center grid grid-item">
-          <div class="overlay">
-            <h2 class="heading img-text placeholder">placeholder image for future content</h2>
-          </div>
-        </div>
-
-        <div class="items item-three img-background img-background-fecamp align-center grid grid-item">
+          <p>»</p>
           <div class="overlay">
             <h2 class="heading img-text placeholder">placeholder image for future content</h2>
           </div>
@@ -72,7 +76,14 @@
           </div>
         </div>
 
-        <footer class="theme-grey grid grid-item">
+        <div class="items item-three img-background img-background-fecamp align-center grid grid-item">
+          <p>»</p>
+          <div class="overlay">
+            <h2 class="heading img-text placeholder">placeholder image for future content</h2>
+          </div>
+        </div>
+
+        <footer class="theme-grey grid grid-footer">
           <div class="footer-content">
             <ul>
               <li><a href="https://www.facebook.com/NicoNijland" class="nav-social"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>

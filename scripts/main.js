@@ -10,6 +10,12 @@ $(document).ready(function(){
   });
 });
 
+$(document).ready(function(){
+  $(".support-btn").on("click", function(){
+    $(".support-warning").fadeOut("slow");
+  });
+});
+
 // Slippry JS
 
 $(function() {
